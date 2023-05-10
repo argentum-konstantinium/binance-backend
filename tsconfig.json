@@ -1,0 +1,22 @@
+{
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": ["tsconfig-paths/register"],
+    "include": ["./src/types/index.d.ts"]
+  },
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "target": "es6",
+    "pretty": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "sourceMap": true,
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@root/*": ["./*"]
+    }
+  },
+  "include": ["./src/types/index.d.ts", "./src/types/vendor.d.ts"]
+}
